@@ -5,16 +5,18 @@ import Adoptation from "./pages/Adoptations";
 import Contact from "./pages/Contact";
 import Donations from "./pages/Donations";
 import WhoAreWe from "./pages/WhoWeAre";
+import FAQ from "./pages/FAQs";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/adoptation" element={<Adoptation />} />
+        <Route path="/adopt" element={<Adoptation />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donations />} />
-        <Route path="/whoarewe" element={<WhoAreWe />} />
+        <Route path="/about" element={<WhoAreWe />} />
+        <Route path="/faq" element={<FAQ />} />
       </Route>
     </Routes>
   );
