@@ -7,12 +7,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Syne', ...defaultTheme.fontFamily.sans],
+    },
     extend: {
       fontFamily: {
         nunito: ['Nunito', ...defaultTheme.fontFamily.sans],
-        syne: ['Syne', ...defaultTheme.fontFamily.sans],
       }
     },
   },
+
   plugins: [],
 }
