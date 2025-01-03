@@ -41,32 +41,20 @@ export default function SwiperCarousel() {
         loop={true}
       >
         {Pets.map((pet: Pet) => (
-          <div key={pet.id} className="max-h-1">
-            <SwiperSlide>
-              <div className="min-h-[450px] border border-black relative rounded-lg">
-                <div>
-                  <OptimizedImage
-                    image={pet.image}
-                    alt={pet.name}
-                    classname="w-full h-56 object-cover rounded-t-lg"
-                  />
-                </div>
-                <div className="flex flex-col items-center p-6">
-                  <p className="text-3xl font-semibold">{pet.name}</p>
-                  <div className="flex flex-col items-center justify-between w-full mt-5 text-2xl mb-2">
-                    <p>{pet.age} yr</p>
-                    <p>{pet.sex}</p>
-                  </div>
-                  <p className="text-xl text-gray-500">{pet.breed}</p>
-                </div>
+          <SwiperSlide key={pet.id}>
+            <div className="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+              <OptimizedImage
+                image={pet.image}
+                alt={pet.name}
+                classname="w-full h-64 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 flex items-center justify-center">
+                <CTABUtton buttonType="primary-small" text= {`Adopt ${pet.name}`} />
               </div>
-            </SwiperSlide>
-          </div>
+            </div>
+          </SwiperSlide>
         ))}
       </Swiper>
-      <div className="mt-10 items-center flex justify-center">
-        <CTABUtton text="See More..." buttonType="secondary" />
-      </div>
     </React.Fragment>
   );
 }

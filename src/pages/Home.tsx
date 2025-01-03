@@ -37,9 +37,14 @@ export default function Home() {
             <h2 className="text-6xl font-bold text-center">
               We are waiting for you
             </h2>
-            <p className="text-2xl text-center">We are searching for a home and a companion, take us with you...</p>
+            <p className="text-2xl text-center">
+              We are searching for a home and a companion, take us with you...
+            </p>
           </div>
           <SwiperCarousel />
+          <div className="mt-10 items-center flex justify-center">
+            <CTABUtton text="See All" buttonType="secondary" />
+          </div>
         </section>
       </main>
     </div>
