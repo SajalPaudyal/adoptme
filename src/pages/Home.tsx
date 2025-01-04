@@ -3,6 +3,7 @@ import CTABUtton from "../components/CTAButton";
 
 import OptimizedImage from "../components/OptimizedImage";
 import SwiperCarousel from "../components/SwiperCarousel";
+import Tabs from "../components/Tabs";
 
 export default function Home() {
   return (
@@ -45,6 +46,9 @@ export default function Home() {
           <div className="mt-10 items-center flex justify-center">
             <CTABUtton text="See All" buttonType="secondary" />
           </div>
+        </section>
+        <section>
+          <Tabs />
         </section>
       </main>
     </div>
