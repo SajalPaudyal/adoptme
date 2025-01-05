@@ -48,6 +48,14 @@ export default function Home() {
           </div>
         </section>
         <section>
+          <div className="mb-20 flex flex-col gap-5">
+            <h2 className="text-6xl font-bold text-center">
+              What motivates us?
+            </h2>
+            <p className="text-2xl text-center">
+              We are highly motivated pet lovers, trying out best to provide these loyal animals what they deserve...
+            </p>
+          </div>
           <Tabs />
         </section>
       </main>

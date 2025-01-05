@@ -87,7 +87,6 @@ export default function Tabs() {
               </div>
             </div>
 
-            {/* Participate Tab */}
             <div
               className={`transition-opacity duration-500 ${
                 tab === 2 ? "opacity-100 block" : "opacity-0 hidden"
@@ -109,7 +108,6 @@ export default function Tabs() {
             </div>
           </div>
 
-          {/* Tab Buttons */}
           <div className="flex flex-col space-y-4">
             <button
               className={`p-5 w-full lg:w-64 border-2 rounded-lg transition duration-300 ${
